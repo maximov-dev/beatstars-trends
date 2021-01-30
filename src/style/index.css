@@ -30,6 +30,10 @@ tr {
     table-layout: fixed;
 }
 
+.container, body {
+    min-width: 0;
+}
+
 .center {
 	text-align: center;
 }
