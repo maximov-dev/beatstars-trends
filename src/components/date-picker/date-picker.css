@@ -1,0 +1,24 @@
+.date-picker {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    padding: 45px;
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+}
+
+.date-picker__text {
+    text-transform: uppercase;
+}
+
+.date-picker-container {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.date-picker__element {
+	display: flex;
+}
+
+.date-picker__component {}
