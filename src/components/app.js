@@ -24,11 +24,21 @@ function App() {
 	  return (
 	<div id="app">
 	  <div class="container">
-			<Header />
-			<DatePickerCustom date={date} setDate={setDate} />
-			<GridTrends 
+				<div class = "row"><div class = "col-md-12">
+					<Header />
+				</div>
+			</div>
+	  		<div class = "row">
+				  <div class = "col-md-12">
+					  <DatePickerCustom date={date} setDate={setDate} />
+					</div>
+			</div>
+	  		<div class = "row"><div class = "col-md-12">
+			  <GridTrends 
 				getDataByDate={dataService.getDataByDate} 
 			  	date={fullDate} />
+			</div>
+		</div>
   		</div>
 		  <footer class="bg-light text-center text-lg-start">
 			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
