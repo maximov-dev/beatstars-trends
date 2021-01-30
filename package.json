@@ -1,5 +1,5 @@
 {
-  "private": true,
+  "private": false,
   "name": "beatstars-search-trends",
   "version": "0.0.0",
   "license": "MIT",
