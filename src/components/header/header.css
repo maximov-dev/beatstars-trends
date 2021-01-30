@@ -22,7 +22,28 @@
     line-height: 125px;
     cursor: default;
 }
+.search-trends-title__text {
+    display: flex;
+    line-height: 125px;
+    cursor: default;
+}
 
 .search-trends-title__text, span {
     vertical-align: middle;
+}
+
+@media (max-width: 600px) {  
+    .search-trends-title {font-size: 4rem;} 
+    .search-trends-title__text {
+        line-height: 80px;
+    }
+    
+  }
+   
+@media (min-width: 768px) {  
+    .search-trends-title {font-size:5rem;} 
+}
+
+@media (min-width: 1200px) {  
+    .search-trends-title {font-size:8rem;} 
 }
