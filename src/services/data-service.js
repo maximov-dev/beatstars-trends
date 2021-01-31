@@ -3,7 +3,7 @@ export default class DataService {
     
 
     getDataByDate = async ({ startDate, endDate }) => {
-        return await this.getResource(`${this._apiBase}&${startDate}&${endDate}`);
+        return await this.getResource(`${this._apiBase}&startDate=${startDate}&endDate=${endDate}`);
     }
 
     getResource = async (url) => {
