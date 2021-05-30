@@ -1,16 +1,16 @@
 import DataService from "../services/data-service";
 import Header from "./header";
-import { Route, Switch, Link, Redirect } from "wouter";
+import { Route, Switch, Link, Redirect, useLocation } from "wouter";
 import BeatStarsPage from "../pages/beatstars";
 import AirBitPage from "../pages/airbit";
-import { useState } from "preact/hooks";
 
 const BEATSTARS= 'beatstars';
 const AIRBIT= 'airbit';
 
 function App() {
   const dataService = new DataService();
-  const [activeRoute, setActiveRoute] = useState('');
+  const [route,] = useLocation();
+  const filteredRoute = route.replace(/\W/g, '');
 
   return (
     <div id="app">
@@ -18,13 +18,13 @@ function App() {
         <Header />
           <div class="btn-group d-flex platforms" role="group">
             <Link class="w-100" to="/beatstars">
-              <button onClick={() => setActiveRoute(BEATSTARS)} type="button" class="btn btn-lg w-100 beatstars-btn">
-                <h2 className={activeRoute === BEATSTARS ? 'active-route' : ''}>BeatStars Trends</h2>
+              <button type="button" class="btn btn-lg w-100 beatstars-btn">
+                <h2 className={filteredRoute === BEATSTARS ? 'active-route' : ''}>BeatStars Trends</h2>
               </button>
             </Link>
             <Link class="w-100" to="/airbit">
-              <button onClick={() => setActiveRoute(AIRBIT)} type="button" class="btn btn-lg w-100 airbit-btn">
-                <h2 className={activeRoute === AIRBIT  ? 'active-route' : ''}>AirBit Trends</h2>
+              <button type="button" class="btn btn-lg w-100 airbit-btn">
+                <h2 className={filteredRoute === AIRBIT  ? 'active-route' : ''}>AirBit Trends</h2>
               </button>
             </Link>
           </div>
@@ -41,6 +41,11 @@ function App() {
             <Redirect to="/beatstars" />
           </Switch>
       </div>
+      <section class="text-dark questions">
+        <span>
+          if you have any questions or suggestions please contact me: <a href="mailto:ifeelzbeatz@gmail.com">iFeelzBeatz@gmail.com</a>
+        </span>
+      </section>
       <footer class="bg-light text-center text-lg-start">
         <div
           class="text-center p-3"

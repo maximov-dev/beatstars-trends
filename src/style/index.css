@@ -35,18 +35,29 @@ div.ag-root {
 .btn.beatstars-btn{
     font-size: 56px;
     color: #ff9a8c;
-    border-radius: 5px;
+    border-radius: 5px !important;
     border-color: #ff9a8c;
     border-width: 3px;
+    margin: 5px 0;
 }
 
 .btn.airbit-btn {
     color: #b37dff;
-    border-radius: 5px;
+    border-radius: 5px !important;
     border-color: #b37dff;
     border-width: 3px;
+    margin: 5px 0;
 }
 
 .active-route {
     color: black;
+}
+
+.questions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bcbcbc33;
+    height: 100px;
+    width: 100%;
 }
