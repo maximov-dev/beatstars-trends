@@ -1,43 +1,52 @@
+@font-face {
+    font-family: 'Aversa';
+    src: url('../assets/fonts/AversaVectorRegular.woff2') format('woff2'),
+        url('../assets/fonts/AversaVectorRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     box-sizing: border-box;
 }
 
 #app {
-	height: 100%;
-}
-
-table {
-    display: flex;
-    flex-flow: column;
-    width: 100%;
-}
-
-thead {
-    flex: 0 0 auto;
-}
-
-tbody {
-    flex: 1 1 auto;
-	display: block;
 	height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
 }
 
-tr {
-    width: 100%;
-    display: table;
-    table-layout: fixed;
+
+div.ag-root {
+    -webkit-user-select:text;
+    -moz-user-select:text;
+    -ms-user-select:text;
+    user-select:text;
 }
 
-.container, body {
-    min-width: 0 !important;
+.platforms {
+    margin: 170px 0 50px 0;
+    flex-direction: column !important;
 }
 
-.center {
-	text-align: center;
+.platforms a {
+    margin: 20px 0;
 }
 
-footer {
-    margin-top: 50px;
+.btn.beatstars-btn{
+    font-size: 56px;
+    color: #ff9a8c;
+    border-radius: 5px;
+    border-color: #ff9a8c;
+    border-width: 3px;
+}
+
+.btn.airbit-btn {
+    color: #b37dff;
+    border-radius: 5px;
+    border-color: #b37dff;
+    border-width: 3px;
+}
+
+.active-route {
+    color: black;
 }

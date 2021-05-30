@@ -21,4 +21,11 @@
 	display: flex;
 }
 
-.date-picker__component {}
+.react-datepicker__day--selected {
+    background-color:#212529 !important;
+}
+
+.date-picker-btn {
+    margin: 0;
+    padding: 10px;
+}

@@ -1,12 +1,3 @@
-@font-face {
-    font-family: 'Aversa';
-    src: url('../../assets/fonts/AversaVectorRegular.woff2') format('woff2'),
-        url('../../assets/fonts/AversaVectorRegular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
 .search-trends-title {
     display: flex;
     justify-content: center;
